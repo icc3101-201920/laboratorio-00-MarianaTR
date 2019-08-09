@@ -6,6 +6,7 @@ namespace LAB1Mariana
 {
     public class Game
     {
+        //CONSTRUCTOR
         public Game(Player players, Board boardGame, Player activePlayer, bool endGame)
         {
             this.players = new Player(100, 100);
@@ -13,6 +14,8 @@ namespace LAB1Mariana
             this.activePlayer = new Player(100, 100);
             this.endGame = endGame;
         }
+
+        //ATRIBUTOS
         private Player players;
         private Board boardGame;
         private Player activePlayer;

@@ -6,6 +6,7 @@ namespace LAB1Mariana
 {
     public class CombatCard
     {
+        //CONSTRUCTOR
         public CombatCard(string name, int attackPoints, Boolean hero, string type,string effect)
         {
             this.name = name;

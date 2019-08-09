@@ -6,7 +6,7 @@ namespace LAB1Mariana
 {
     public class Player
     {
-
+        //CONSTRUCTOR
         public Player(int lifePoints, int attackPoints)
         {
             this.lifePoints = lifePoints;
@@ -16,6 +16,8 @@ namespace LAB1Mariana
             this.board = new Board();
             this.captain = new SpecialCard("name","type", "buffType", "effect");
         }
+
+        //ATRIBUTOS
         private int lifePoints;
         private int attackPoints;
         private Deck deck;
@@ -23,6 +25,7 @@ namespace LAB1Mariana
         private Board board;
         private SpecialCard captain;
 
+        //GET AND SET
         public int LifePoints { get => lifePoints; set => lifePoints = value; }
         public int AttackPoints { get => attackPoints; set => attackPoints = value; }
         public Deck Deck { get => deck; set => deck = value; }
@@ -30,6 +33,7 @@ namespace LAB1Mariana
         public Board Board { get => board; set => board = value; }
         public SpecialCard Captain { get => captain; set => captain = value; }
 
+        //METODOS
         public void DrawCard()
         {
 

@@ -6,6 +6,7 @@ namespace LAB1Mariana
 {
     public class Board
     {
+        //CONSTRUCTOR
         public Board()
         {
             this.meleeCards = new List<CombatCard>();
@@ -17,6 +18,8 @@ namespace LAB1Mariana
             this.captainCards = new List<SpecialCard>();
             this.weatherCards = new List<SpecialCard>();
         }
+
+        //ATRIBUTOS
         private List<CombatCard> meleeCards;
         private List<CombatCard> rangeCards;
         private List<CombatCard> longRangeCards;
@@ -26,6 +29,7 @@ namespace LAB1Mariana
         private List<SpecialCard> captainCards;
         private List<SpecialCard> weatherCards;
 
+        //GET AND SET
         public List<CombatCard> MeleeCards { get => meleeCards; set => meleeCards = value; }
         public List<CombatCard> RangeCards { get => rangeCards; set => rangeCards = value; }
         public List<CombatCard> LongRangeCards { get => longRangeCards; set => longRangeCards = value; }
@@ -35,6 +39,8 @@ namespace LAB1Mariana
         public List<SpecialCard> CaptainCards { get => captainCards; set => captainCards = value; }
         public List<SpecialCard> WeatherCards { get => weatherCards; set => weatherCards = value; }
 
+
+        //METODOS
         public void AddComnatCard(int playerId, CombatCard combatCard) { }
         public void AddSpecialCard(int playerId, SpecialCard specialCard) { }
         public void DestroyCombatCards() { }
